@@ -1,0 +1,41 @@
+{
+  "name": "hytee",
+  "version": "0.0.1",
+  "description": "Lightweight, 0 dependency HTTP client.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n00pper/hytee.git"
+  },
+  "keywords": [
+    "HTTP",
+    "Client",
+    "Fetch API",
+    "Promise"
+  ],
+  "author": "Ádám Kovács",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n00pper/hytee/issues"
+  },
+  "homepage": "https://github.com/n00pper/hytee#readme",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.5"
+  }
+}
